@@ -19,9 +19,9 @@ mongoose.connect(db).then(()=>{
 // })
 app.use(express.json())
 app.use(
-    // router.get('/',(req, res)=>{
-    //     res.send('Hello world from server use')
-    // }),
+    router.get('/',(req, res)=>{
+        res.send('Hello world from server use')
+    }),
     router.post('/register',(req,res)=>{
         const {name,email,phone,password,cpassword}=req.body
         if(!name || !email ||!phone ||!password ||!cpassword){
@@ -43,9 +43,9 @@ app.use(
 // app.post('/register',(req,res)=>{
 //     res.json({message:req.body})
 // })
-app.get('/',(req,res)=>{
-    res.send('Hello world from about server')
-})
+// app.get('/',(req,res)=>{
+//     res.send('Hello world from about server')
+// })
 app.get('/about',(req,res)=>{
     res.send('Hello world from about server')
 })
