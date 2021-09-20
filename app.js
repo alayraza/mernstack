@@ -49,6 +49,6 @@ app.get('/',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.send('Hello world from about server')
 })
-app.listen(3000,()=>{
+app.listen(process.env.PORT,()=>{
     console.log('Server is running')
 })
