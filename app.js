@@ -19,9 +19,9 @@ mongoose.connect(db).then(()=>{
 // })
 app.use(express.json())
 app.use(
-    router.get('/',(req, res)=>{
-        res.send('Hello world from server use')
-    }),
+    // router.get('/',(req, res)=>{
+    //     res.send('Hello world from server use')
+    // }),
     router.post('/register',(req,res)=>{
         const {name,email,phone,password,cpassword}=req.body
         if(!name || !email ||!phone ||!password ||!cpassword){
