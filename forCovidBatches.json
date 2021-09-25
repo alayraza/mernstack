@@ -1,0 +1,17 @@
+{
+    "forCovidBatches" : [
+        {
+            "AIC": {"Batch 1": {"Quiz1":"aickey"}}
+        },
+        {
+            "BCC": {"Batch 1": {"Quiz1":"aickey"}}
+        },
+        {
+            "CNC": {"Batch 1": {"Quiz1":"aickey"}}
+        },
+        {
+            "IOT": {"Batch 1": {"Quiz1":"aickey"}}
+        }
+    ]
+}
+

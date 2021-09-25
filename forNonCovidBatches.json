@@ -1,0 +1,135 @@
+{
+    "forNonCovidBatches" :[ 
+        {
+            "AIC":{
+                "Batch 1":{
+                    "Quarter 4":{
+                        "Quiz 10 SageMaker 1": "sgk54p",
+                        "Quiz 11 SageMaker 2": "vpq84md",
+                        "Quiz 12 Computer Vision with TensorFlow": "vmj65tk"
+                    }
+                },
+                "Batch 3":{
+                    "Quarter 3":{
+                        "Linux Quiz": "amq83p",
+                        "Docker Quiz": "adm25z",
+                        "Quiz 9 Advanced Deep Learning": "aem96q"
+                    }
+                },
+                "Batch 4": {
+                    "Git Quiz":"agi37k",
+                    "Quiz 4 Numpy":"nm23p8",
+                    "Quiz 5 Pandas": "pa5mt8",
+                    "Quiz 6 Deep Learning":"dqm45h",
+                    "Quarter 3":{
+                        "Linux Quiz": "amq83p",
+                        "Docker Quiz": "adm25z"
+                    }
+                },
+                "Batch 35":{
+                    "Git Quiz": "agi37k",
+                    "Quiz 4 Numpy":"nm23p8",
+                    "Quiz 5 Pandas": "pa5mt8",
+                    "Quiz 6 Deep Learning":"dqm45h",
+                    "Quarter 3":{
+                        "Linux Quiz": "amq83p",
+                        "Docker Quiz": "adm25z"
+                    }
+                }
+            },
+            "BCC":{
+                "Batch 1":{
+                    "Quarter 4":{
+                        "Quiz 10 Redux": "red11k",
+                        "Quiz 11 Dapp/Drizzle/IPFS": "mok28j",
+                        "Quiz 12 DeFi": "dkm43w"
+                    }
+                },
+                "Batch 3":{
+                    "Quarter 3":{
+                        "Quiz 7 Solidity 3": "mtz47k",
+                        "Quiz 8 Token": "tkm82z",
+                        "Quiz 9 React": "brc54z"
+                    }
+                },
+                "Batch 4":{
+                    "Git Quiz":"gmk79z",
+                    "Quiz 4 JavaScript": "mz39pz",
+                    "Quiz 5 Solidity 1":"sd28k3",
+                    "Quiz 6 Solidity 2": "qsd54z"
+                },
+                "Batch 35":{
+                    "Git Quiz":"gmk79z",
+                    "Quiz 4 JavaScript": "mz39pz",
+                    "Quiz 5 Solidity 1":"sd28k3",
+                    "Quiz 6 Solidity 2": "qsd54z"
+                }
+            },
+            "CNC":{
+                "Batch 1":{
+                    "Quarter 4":{
+                        "Quiz 11 AWS Developer Associate 1": "dmp76k",
+                        "Quiz 12 AWS Developer Associate 2": "mbp38y",
+                        "Quiz 13 AWS Developer Associate 3": "qm35bm"
+                    }
+                },
+                "Batch 3":{
+                    "Quarter 3":{
+                        "Quiz 8 GraphQL Apollo Client": "gac96p",
+                        "Quiz 9 JAMstack": "kja63p",
+                        "Quiz 10 GraphQL Apollo Server": "umq61b"
+                    }
+                },
+                "Batch 4":{
+                    "Git Quiz": "cgm63p",
+                    "Quiz 5 JavaScript": "kp2c5z",
+                    "Quiz 6 Advance JavaScript": "wd893k",
+                    "Quiz 7 React": "rec22k"
+                },
+                "Batch 35":{
+                    "Git Quiz": "cgm63p",
+                    "Quiz 5 JavaScript": "kp2c5z",
+                    "Quiz 6 Advance JavaScript": "wd893k",
+                    "Quiz 7 React": "rec22k"
+                }
+            },
+            "IOT":{
+                "Batch 2":{
+                    "Quarter 4":{
+                        "Quiz 9 Chatbot 1": "cmt46z",
+                        "Quiz 10 Chatbot 2": "kqz85p",
+                        "Quiz 11 Chatbot 3": "qmp68z"
+                    }
+                },
+                "Batch 3":{
+                    "Quarter 3":{
+                        "Linux Quiz": "kyz3mp",
+                        "Docker Quiz": "tmy22k",
+                        "Quiz 7 Rust Asynchronous Microservices": "am34s8",
+                        "Quiz 8 Kubernetes": "kub45m"
+                    }
+                },
+                "Batch 4":{
+                    "Git Quiz":"gio47k",
+                    "Quiz 4 Rust 3": "qm4t3",
+                    "Quiz 5 Embedded Rust 1": "em34pq",
+                    "Quiz 6 Embedded Rust 2":"qmp37k",
+                    "Quarter 3":{
+                        "Linux Quiz": "kyz3mp",
+                        "Docker Quiz": "tmy22k"
+                    }
+                },
+                "Batch 35":{
+                    "Git Quiz":"gio47k",
+                    "Quiz 4 Rust 3":"qm4t3",
+                    "Quiz 5 Embedded Rust 1": "em34pq",
+                    "Quiz 6 Embedded Rust 2":"qmp37k",
+                    "Quarter 3":{
+                        "Linux Quiz": "kyz3mp",
+                        "Docker Quiz": "tmy22k"
+                    }
+                }
+            }
+        }
+    ]
+}
