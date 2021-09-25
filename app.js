@@ -119,7 +119,8 @@ app.use(
         //     }
             const user = new Exam({batch,batchId:mongoose.Types.ObjectId(batchId),course,courseId:mongoose.Types.ObjectId(courseId),quizName,quizOrder,examKey,isActive});
             user.save().then(()=>{
-                return res.status(201).json({message:"user registered"})
+                // return res.status(201).json({message:"quiz added successfully"})
+                return res.status(201).json({message:user})
             }).catch((err)=>res.status(500).json({error:err}))
         // }).catch(err=>{console.log(err)})
     }),
