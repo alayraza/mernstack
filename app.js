@@ -2,45 +2,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const app = express();
-const User = require('./userSchema')
-const router = express.Router()
-
-const examSchema= new mongoose.Schema({
-    batch:{
-        type:String,
-        required:true
-    },
-    batchId:{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'batchId' 
-    },
-    course:{
-        type:String,
-        required:true
-    },
-    courseId:{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'courseId' 
-    },
-    quizName:{
-        type:String,
-        required:true
-    },
-    quizOrder:{
-        type:Number,
-        required:true
-    },
-    examKey:{
-        type:String,
-        required:true
-    },
-    isActive:{
-        type:Boolean,
-        required:true
-    }
-})
-const Exam = mongoose.model('examData',examSchema)
-module.exports=Exam;
+const User = require('./userSchema');
+const Exam = require('./examSchema');
+const router = express.Router();
 
 dotenv.config({path:'./config.env'})
 const db=process.env.DATABASE;
@@ -50,6 +14,7 @@ mongoose.connect(db).then(()=>{
     console.log('connection successfull')
 }).catch((err)=> console.log('no connection'))
 
+require('./routes')(app,mongoose);
 
 // router.get('/',(req, res)=>{
 //     res.send('Hello world from server')
@@ -77,10 +42,11 @@ app.use(
         // console.log({message:req.body})
     }),
     router.get('/getallbatches',(req, res)=>{
-        CovidBatchesExamCode.find({}).then((data)=>{
-            data.map((batches)=>{
-                res.send(batches.forNonCovidBatches.AIC)
-            })
+        Exam.find({}).then((data)=>{
+            // data.map((batches)=>{
+            //     res.send(batches.forNonCovidBatches.AIC)
+            // })
+            res.send(data)
             console.log(data);
         })
         // res.send('getallbatches')
@@ -125,15 +91,16 @@ app.use(
         // }).catch(err=>{console.log(err)})
     }),
 )
-// app.post('/register',(req,res)=>{
-//     res.json({message:req.body})
-// })
-// app.get('/',(req,res)=>{
-//     res.send('Hello world from about server')
-// })
-app.get('/about',(req,res)=>{
-    res.send('Hello world from about server')
-})
-app.listen(process.env.PORT || 3000,()=>{
-    console.log('Server is running')
-})
+    // app.post('/register',(req,res)=>{
+    //     res.json({message:req.body})
+    // })
+    // app.get('/',(req,res)=>{
+    //     res.send('Hello world from about server')
+    // })
+    app.get('/about',(req,res)=>{
+        res.send('Hello world from about server')
+    })
+    app.listen(process.env.PORT || 3000,()=>{
+        console.log('Server is running')
+    })
+module.exports = app;
